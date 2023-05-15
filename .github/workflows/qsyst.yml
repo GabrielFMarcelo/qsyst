@@ -13,4 +13,4 @@ jobs:
       with:
         server: 109.106.254.194
         username: group3_classrecord@bsitport2026.com
-        password: ${{ admin123 }}
+        password: ${{ secrets.FTP_PASSWORD }}
