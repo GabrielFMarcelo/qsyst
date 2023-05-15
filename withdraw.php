@@ -31,10 +31,12 @@
         <h1 class="font-weight-light pb-0 mb-0" style="font-size: 100px;">WITHDRAW</h1>
         <h5 class="font-weight-light pt-0 mt-0" style="letter-spacing: 5px; font-size: 50px;">queuing system</h5>
       </div>
+      <div class="bg-dark jumbotron col-md-6 mx-auto text-center mt-5">
+        <form class="" action="" method="POST">
+          <div class="form-group d-inline">
              <?php
              insertN();
              ?>
-             <div class="bg-dark jumbotron col-md-6 mx-auto text-center mt-5">
             <label class="text-light mb-3" for="">Name</label>
             <br>
              <input class="form-control mx-auto d-inline" style="width:450px" type="text" name="names" placeholder="Enter your name" required/>
