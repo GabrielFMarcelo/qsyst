@@ -38,7 +38,7 @@
             <label class="text-light mb-3" for="">Name</label>
             <br>
              <input class="form-control mx-auto d-inline" style="width:450px" type="text" name="names" placeholder="Enter your name" required/>
-             <input class=" btnW btn btn-primary btn-sm py-2 d-inline" onclick="location.href='dashboard.php'" type="submit" name="btnW" value="Withdraw">
+             <input class="btnW btn btn-primary btn-sm py-2 d-inline" onclick="location.href='dashboard.php'" type="submit" name="btnW" value="Withdraw">
            </div>
              <?php
              if (isset($_POST['btnW'])) {
