@@ -1,8 +1,8 @@
 <?php
   class config{
     //Declare DB Details
-    private $user = 'root';
-    private $password = '';
+    private $user = 'bsit3567_g3';
+    private $password = 'admin123';
     public $pdo = null;
 
     public function con(){
