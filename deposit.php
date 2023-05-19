@@ -12,7 +12,25 @@
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-     <title>Withdraw</title>
+     <title>Deposit</title>
+     <style media="screen">
+     .transac{
+       font-size: 100px;
+     }
+
+     .queu{
+       font-size: 50px;
+     }
+
+     @media (max-width:820px) {
+       .transac{
+         font-size: 50px;
+       }
+       .queu{
+         font-size: 30px;
+       }
+     }
+     </style>
    </head>
    <body>
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
@@ -27,12 +45,19 @@
           </div>
         </div>
       </nav>
-      <div class="text-center mt-5 pt-3">
-        <h1 class="font-weight-light pb-0 mb-0" style="font-size: 100px;">DEPOSIT</h1>
-        <h5 class="font-weight-light pt-0 mt-0" style="letter-spacing: 5px; font-size: 50px;">queuing system</h5>
-      </div>
+      <div class="container-fluid">
+          <div class="col-md">
 
-       <div class="jumbotron col-md-6 mx-auto bg-dark text-center mt-5">
+      <div class="text-center mt-5 pt-5">
+        <h1 class="transac font-weight-light pb-0 mb-0">DEPOSIT</h1>
+        <h5 class="queu font-weight-light pt-0 mt-0">queuing system</h5>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+       <div class="jumbotron bg-dark text-center mt-5">
          <form class="" action="" method="POST">
            <div class="form-group d-inline">
              <?php
@@ -40,8 +65,8 @@
              ?>
             <label class="text-light mb-3" for="">Name</label>
             <br>
-             <input class="form-control d-inline" type="text" style="width: 450px;"name="names" placeholder="Enter your name" required/>
-             <input class="btn btn-primary btn-sm py-2 d-inline" type="submit" name="btnD" value="Deposit">
+             <input class="form-control d-inline" type="text" name="names" placeholder="Enter your name" required/>
+             <input class="btn btn-primary btn-sm py-2 d-inline mt-3" type="submit" name="btnD" value="Deposit">
              <?php
              if (isset($_POST['btnD'])) {
                header("Location: dashboard.php");
@@ -49,6 +74,9 @@
             ?>
           </div>
         </form>
+      </div>
+      </div>
+    </div>
        </div>
      </div>
 
